@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+  color: #000;
+    text-shadow: 0 0 0.01px;
+}
+
+body{
+    background-color: #EEE;
+    font-family: Helvetica, Arial, sans-serif;
+    /*width: 100%;*/
+    line-height: 1.2;
+    /*text-transform: uppercase;*/
+    background: url(./img/159H.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 1.2px rgb(221, 221, 221);
+    color: #009688;
+    padding: 20px 0;
+    border-radius: 4px;
+}
+
+.intro h2{
+    font-size: 0.9em;
+    letter-spacing: 0.3em;
+}
+
+h1{
+    color: #FF5722;
+}
+
+h3{
+    text-transform: uppercase;
+    color:#333;
+    text-shadow: 0px 0px 1px #777 ;
+}
+
+.page-wrapper{
+    width: 90%;
+    max-width: 960px;/**/
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/*div[id^=zen]:nth-child(2n) h3 {
+    text-align: right;
+}*/
+
+.main div[id^="zen"]:nth-child(2n+1)>h3 /* on peut aussi fair [role="article"]*/{
+    text-align: right;
+}
+
+/*.page-wrapper h3:nth-last-of-type(n+1) {
+    text-align: center;
+}*/
+
+
+.intro h1, .intro h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sidebar h3 {
+    text-align: left;
+}
+
+.summary{
+    background-color: rgba(253, 110, 64, 0.8);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.preamble, .explanation,.participation, .benefits, .requirements {
+    background-color: rgba(253, 110, 64, 0.8);
+    -webkit-columns: 50px 3; /* Chrome, */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 4;
+    -webkit-column-gap: 10px;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1px #777;
+    font-size: .97em;
+}
+
+p {
+    color: #fff;
+    padding-top: 10px;
+    margin: 0;
+    margin: 0 auto;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin: 20px 0;
+    text-align: right;
+    border-radius: 4px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    background-color: rgba(253, 110, 64, 0.8);
+    color:#fff ;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+}
+
+.wrapper a{
+    color:#fff;
+    margin: 0 auto;
+}
+
+.design-selection, .design-archives, .zen-resources{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    line-height: 1.5;
+    width: 297px;
+
+}
+.sidebar ul li{
+    margin-bottom: 7px;
+}
+
+.designer-name{
+    display: block;
+}
+footer a{
+    margin-left: 10px;
+}
+/*Media querys*/
+@media (max-width: 480px) {
+    .preamble, .explanation,.participation, .benefits, .requirements {
+        -webkit-columns: unset; /* Chrome, */
+        -moz-columns: unset; /* Firefox */
+        columns: unset;
+    }
+}
